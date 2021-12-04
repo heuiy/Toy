@@ -2,6 +2,10 @@ library(dplyr)
 
 number = c(0:57)
 
+sample(45, 6)
+
+sample(46, 3)
+
 rty = c(87.0,
 74.6,
 70.9,
