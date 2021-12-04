@@ -3,6 +3,7 @@ library(dplyr)
 number = c(0:57)
 
 sample(45, 6)
+sample(45, 6)
 
 rty = c(87.0,
 74.6,
