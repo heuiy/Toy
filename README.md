@@ -19,9 +19,10 @@
 ### 220408_NFT 판매
 
 ### 220508_Pygame
-- aliens_Rev.01
+- aliens(repl)_Rev.01
   - https://replit.com/@EuiyeongHwang/ThriftyWeeDegrees#main.py
- 
+- aliens_Rev.01.ipynb
+  - https://colab.research.google.com/drive/1JpDAe1AlyKAt4aWG9iwzsxMoJ8rTDp5y?usp=sharing
  
 
 
