@@ -17,3 +17,12 @@
 ### 220308_샤넬
 
 ### 220408_NFT 판매
+
+### 220508_Pygame
+- aliens_Rev.01
+  - https://replit.com/@EuiyeongHwang/ThriftyWeeDegrees#main.py
+ 
+ 
+
+
+
