@@ -1,4 +1,4 @@
-### 211008_BB 구술평가
+### 211008_김재균 팀장님 BB 구술평가
 - DoE_Rev.01
   - https://colab.research.google.com/drive/18I_lYCBtXJBmfbz8DP2D2n7B3V70zDfY?usp=sharing
 
@@ -14,16 +14,17 @@
 
 ### 220208_천국 코인
 
-### 220308_샤넬
+### 220308_샤넬 기술 Selling
 
-### 220408_NFT 판매
+### 220408_NFT 제작
 
 ### 220508_Pygame
 - aliens(repl)_Rev.01
   - https://replit.com/@EuiyeongHwang/ThriftyWeeDegrees#main.py
 - aliens_Rev.01.ipynb
   - https://colab.research.google.com/drive/1JpDAe1AlyKAt4aWG9iwzsxMoJ8rTDp5y?usp=sharing
- 
 
+### 220608_Tensorflow Certificate
+- Rev.01
 
 
