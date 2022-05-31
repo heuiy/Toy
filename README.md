@@ -24,6 +24,10 @@
 - aliens_Rev.01.ipynb
   - https://colab.research.google.com/drive/1JpDAe1AlyKAt4aWG9iwzsxMoJ8rTDp5y?usp=sharing
 
+### 220531_플라스크_최광청계장님
+- 플라스크(R)_Rev.01
+  - https://colab.research.google.com/drive/1H15tyKcQTrUib-4nr-2Gc-TOWS_7aRkS?usp=sharing
+
 ### 220608_TensorFlow Developer Certificate
 - Rev.01
 
