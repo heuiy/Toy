@@ -24,9 +24,6 @@
 - aliens_Rev.01.ipynb
   - https://colab.research.google.com/drive/1JpDAe1AlyKAt4aWG9iwzsxMoJ8rTDp5y?usp=sharing
 
-### 220608_TensorFlow Developer Certificate
-- Rev.01
-
 ### 220603_디클라제 충전량 분석 (BOS0160)
 - 디클라제 충전 경향성 분석 (BOS0160)_Rev.01.ipynb
   - https://drive.google.com/file/d/1DgfsfOtvEB_1XbOXbRppcVhy7-JLJwFt/view?usp=sharing
