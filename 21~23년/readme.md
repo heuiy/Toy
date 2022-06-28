@@ -28,7 +28,12 @@
 - 플라스크(R)_Rev.01
   - https://colab.research.google.com/drive/1H15tyKcQTrUib-4nr-2Gc-TOWS_7aRkS?usp=sharing
 
-### 220608_TensorFlow Developer Certificate
-- Rev.01
+### 220603_디클라제 충전량 분석 (BOS0160)
+- 디클라제 충전 경향성 분석 (BOS0160)_Rev.01.ipynb
+  - https://drive.google.com/file/d/1DgfsfOtvEB_1XbOXbRppcVhy7-JLJwFt/view?usp=sharing
+
+### 220610_디클라제 충전량 IPC 분석 (SGD22001~4)
+- 디클라제 충전량 IPC_Rev.01.ipynb
+  - https://colab.research.google.com/drive/1QPS8ReTZB1TW3detJX4uWVtoyj1eOrhK?usp=sharing
 
 
