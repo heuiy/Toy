@@ -36,4 +36,7 @@
 - 디클라제 충전량 IPC_Rev.01.ipynb
   - https://colab.research.google.com/drive/1QPS8ReTZB1TW3detJX4uWVtoyj1eOrhK?usp=sharing
 
+### 220628_디클라제 SEC IPC 관리 강화
+- 디클라제 SEC IPC 관리 강화(R)_Rev.01.ipynb
+  - https://colab.research.google.com/drive/1T8BEn9QGph7reOU_jptDn2kWHPCpUKwU?usp=sharing
 
