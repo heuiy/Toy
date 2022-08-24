@@ -48,5 +48,11 @@
 - PQP22158 완제생산팀 SR2라인 Depyrogenation Tunnel(TS-SG-101) PQ_Rev.01
   - https://drive.google.com/file/d/1hz_20-MCAzqsKovoBCaKxxpwVtwtzInf/view?usp=sharing
 
+### 220823_디클라제 기준수율 변경
+- 디클라제 기준수율 변경_Rev.01
+  - https://colab.research.google.com/drive/1dy0oU_wepteFABkzmZL1eOuBBhSlIX1b?usp=sharing
+
+
+
 
 
