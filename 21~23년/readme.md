@@ -52,6 +52,9 @@
 - 디클라제 기준수율 변경_Rev.01
   - https://colab.research.google.com/drive/1dy0oU_wepteFABkzmZL1eOuBBhSlIX1b?usp=sharing
 
+### 220830_기술통계
+- 기술통계_Rev.01
+  - https://colab.research.google.com/drive/1zWLL-AGBRQH3a8AGqdy23fxdwVVuNEYR?usp=sharing
 
 
 
