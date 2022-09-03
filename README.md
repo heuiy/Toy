@@ -35,6 +35,6 @@
 - 디클라제 충전량 IPC_Rev.01.ipynb
   - https://colab.research.google.com/drive/1QPS8ReTZB1TW3detJX4uWVtoyj1eOrhK?usp=sharing
 
-### 220903_D3그래프
-- 그래프_Rev.01.ipynb
+### 220903_동적 그래프
+- 동적 그래프_Rev.01.ipynb
   - 
