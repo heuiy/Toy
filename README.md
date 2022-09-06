@@ -1,4 +1,4 @@
-### 211008_김재균 팀장님 BB 구술평가
+### 211008_BB 구술평가
 - DoE_Rev.01
   - https://colab.research.google.com/drive/18I_lYCBtXJBmfbz8DP2D2n7B3V70zDfY?usp=sharing
 
