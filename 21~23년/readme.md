@@ -55,3 +55,7 @@
 ### 220830_기술통계
 - 기술통계_Rev.01
   - https://colab.research.google.com/drive/1zWLL-AGBRQH3a8AGqdy23fxdwVVuNEYR?usp=sharing
+
+### 221021_시계열 분석
+- 시계열 분석_Rev.01
+  - https://colab.research.google.com/drive/1DQvOx6b655J4kJcyCWGg31Pq8XpmIT8I?usp=sharing
