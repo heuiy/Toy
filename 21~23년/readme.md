@@ -62,3 +62,7 @@
   
 ### 221118 SNUH Medical AI Challenge 2022
 - 부스
+
+### 221122 stable diffusion
+- 그림그려주는AI_gradio
+  - https://colab.research.google.com/drive/1cN_iGzGb8ucDBaIO8tOTySMJRK70OYmI?usp=share_link
