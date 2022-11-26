@@ -64,5 +64,7 @@
 - 부스
 
 ### 221122 stable diffusion
-- 그림그려주는AI_gradio
-  - https://colab.research.google.com/drive/1cN_iGzGb8ucDBaIO8tOTySMJRK70OYmI?usp=share_link
+- 그림그려주는AI_gradio_Rev.01
+  - https://colab.research.google.com/drive/1OQC6fW-QgfUL_eWAsTRumuI9GEpXL7jM?usp=share_link
+- 스테이블 디퓨전2.0 예제_Rev.01
+  - https://colab.research.google.com/drive/1FhPdj_5sx4UcYYdZLIrnE02iY1DGshJe?usp=share_link
