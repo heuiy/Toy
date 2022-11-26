@@ -68,3 +68,4 @@
   - https://colab.research.google.com/drive/1OQC6fW-QgfUL_eWAsTRumuI9GEpXL7jM?usp=share_link
 - 스테이블 디퓨전2.0 예제_Rev.01
   - https://colab.research.google.com/drive/1FhPdj_5sx4UcYYdZLIrnE02iY1DGshJe?usp=share_link
+    - 예제 코드에 번역기만 붙였
