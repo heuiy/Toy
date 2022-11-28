@@ -69,3 +69,19 @@
 - 스테이블 디퓨전2.0 예제_Rev.01
   - https://colab.research.google.com/drive/1FhPdj_5sx4UcYYdZLIrnE02iY1DGshJe?usp=share_link
     - 예제 코드에 번역기만 붙였음
+
+### 221128 WANDB
+- WANDB_tutorial_kr_Rev.01
+  - https://drive.google.com/file/d/1WlZXaxJceZy6UvY3HPmb3ujp9iBL3MWT/view?usp=share_link
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
