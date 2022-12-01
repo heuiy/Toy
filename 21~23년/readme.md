@@ -61,7 +61,8 @@
   - https://colab.research.google.com/drive/1DQvOx6b655J4kJcyCWGg31Pq8XpmIT8I?usp=sharing
   
 ### 221118 SNUH Medical AI Challenge 2022
-- 부스
+- Rev.09
+  - https://drive.google.com/file/d/1FygQ_oYLwtatWzcxEke68t2NAP9iMryE/view?usp=share_link
 
 ### 221122 stable diffusion
 - 그림그려주는AI_gradio_Rev.01
