@@ -31,6 +31,8 @@
 ### 220603_디클라제 충전량 분석 (BOS0160)
 - 디클라제 충전 경향성 분석 (BOS0160)_Rev.01.ipynb
   - https://drive.google.com/file/d/1DgfsfOtvEB_1XbOXbRppcVhy7-JLJwFt/view?usp=sharing
+- 디클라제 충전 경향성 분석 (BOS0160)_Rev.02.ipynb
+  - https://drive.google.com/file/d/1GHpjj4507zLBnaDQVfKddMfMJE_Fgs_t/view?usp=share_link
 
 ### 220610_디클라제 충전량 IPC 분석 (SGD22001~4)
 - 디클라제 충전량 IPC_Rev.01.ipynb
