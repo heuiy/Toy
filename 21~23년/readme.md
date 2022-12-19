@@ -75,8 +75,15 @@
 - WANDB_tutorial_kr_Rev.01
   - https://drive.google.com/file/d/1WlZXaxJceZy6UvY3HPmb3ujp9iBL3MWT/view?usp=share_link
   
-  
-  
+### 221209 CDM AI Challenge 2022
+- HEY_Rev.01
+  - https://drive.google.com/file/d/1W5Ye5fEl0Ga9WXXfzMwq5eWbi1h_VZQ0/view?usp=share_link
+- HEY_Rev.02  
+  - https://drive.google.com/file/d/1Qi1bAHaEQq9XGcIrZbAQ9rrMHxHtk3ts/view?usp=share_link
+- CNN_1214_Rev.01
+  - https://drive.google.com/file/d/1bcBCuGBwdzJdjgQJKG_9Mu2s2Ibig2fw/view?usp=share_link
+- Untitled_Rev.01
+  - https://drive.google.com/file/d/1nPkL_jvHeWRwwF_wrCXs3FiJghoGtJ47/view?usp=share_link
   
   
   
