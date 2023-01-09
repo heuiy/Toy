@@ -88,10 +88,6 @@
 - Untitled_Rev.01
   - https://drive.google.com/file/d/1nPkL_jvHeWRwwF_wrCXs3FiJghoGtJ47/view?usp=share_link
   
-### 230109 제미글립틴 SPC
-- ControlChart_CPK_Ver4_익산
-  - https://drive.google.com/file/d/1c5jRpzX-b9dkcBKadRt6islaq-HLWxKl/view?usp=share_link
-  
 
 
 
