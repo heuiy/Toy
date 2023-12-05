@@ -1,0 +1,177 @@
+create a gantt chart for product schedule using mermaid.js. This is how mermaid.js creates a gantt chart:
+gantt
+    title A Gantt Diagram
+    dateFormat  YYYY-MM-DD
+    section Section
+    A task           :a1, 2014-01-01, 30d
+    Another task     :after a1  , 20d
+    section Another
+    Task in sec      :2014-01-12  , 12d
+    another task      : 24d
+
+This is a table with my product schedule.
+
+Product	Batch	Duration (Days)	Start Date
+FEK-IPS	13	1	23-07-01
+FEK-IPS	14	1	23-07-02
+FEK-IPS	15	1	23-07-03
+FEK-IPS	16	1	23-07-04
+FEK-IPS	17	1	23-07-05
+FEK-IPS	18	1	23-07-06
+FEK-IPS	19	1	23-07-07
+FEK-IPS	20	1	23-07-08
+FEK-IPS	21	1	23-07-09
+FEK-IPS	22	1	23-07-10
+FEK-IPS	23	1	23-07-11
+EBX	60	2	23-06-30
+EBX	61	2	23-07-02
+EBX	62	1	23-07-04
+EBX	63	1	23-07-05
+EBX	64	1	23-07-06
+EBX	65	1	23-07-07
+EBX	66	1	23-07-08
+EBX	67	1	23-07-09
+EBX	68	1	23-07-10
+EBX	69	1	23-07-11
+EBX	70	1	23-07-12
+EBX	71	1	23-07-13
+EBX	72	1	23-07-28
+EBX	73	1	23-07-29
+EBX	74	1	23-07-30
+EBX	75	1	23-07-31
+FP	12	1	23-06-27
+FP	13	1	23-06-28
+IKF-916	62	1	23-07-01
+IKF-916	63	1	23-07-02
+IKF-916	64	1	23-07-03
+IKF-916	65	1	23-07-04
+IKF-916	66	1	23-07-05
+IKF-916	67	1	23-07-06
+IKF-916	68	1	23-07-07
+IKF-916	69	1	23-07-09
+IKF-916	70	1	23-07-10
+IKF-916	71	1	23-07-11
+IKF-916	72	1	23-07-12
+IKF-916	73	1	23-07-13
+IKF-916	74	1	23-07-14
+IKF-916	75	1	23-07-16
+IKF-916	76	1	23-07-17
+IKF-916	77	1	23-07-18
+IKF-916	78	1	23-07-19
+IKF-916	79	1	23-07-20
+IKF-916	80	1	23-07-21
+IKF-916	81	1	23-07-22
+IKF-916	82	1	23-07-23
+IKF-916	83	1	23-07-24
+IKF-916	84	1	23-07-25
+IKF-916	85	1	23-07-26
+IKF-916	86	1	23-07-27
+IKF-916	87	1	23-07-28
+IKF-916	88	1	23-07-29
+IKF-916	89	1	23-07-30
+IKF-916	90	1	23-07-31
+FPESA	1	2	23-07-17
+FPESA	2	3	23-07-19
+FPESA	3	3	23-07-22
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    #ganttChart {
+        width: 2000px; /* adjust this to your desired width */
+        overflow: auto;
+    }
+</style>
+
+<div class="mermaid" id="ganttChart"></div>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+
+<div class="mermaid" id="ganttChart"></div>
+
+<script>
+    mermaid.initialize({startOnLoad:true});
+    const ganttChart = `
+    gantt
+        title Product Schedule
+        dateFormat  YYYY-MM-DD
+        section FEK-IPS
+        Batch 13           :a1, 2023-07-01, 1d
+        Batch 14           :after a2, 1d
+        Batch 15           :after a3, 1d
+        Batch 16           :after a4, 1d
+        Batch 17           :after a5, 4d
+        Batch 18           :after a6, 5d
+        Batch 19           :after a7, 6d
+        Batch 20           :after a8, 7d
+        Batch 21           :after a9, 8d
+        Batch 22           :after a10, 9d
+        Batch 23           :after a11, 10d
+        section EBX
+        Batch 60           :a2, 2023-06-30, 2d
+        Batch 61           :after a2, 3d
+        Batch 62           :after a2, 5d
+        Batch 63           :after a2, 6d
+        Batch 64           :after a2, 7d
+        Batch 65           :after a2, 8d
+        Batch 66           :after a2, 9d
+        Batch 67           :after a2, 10d
+        Batch 68           :after a2, 11d
+        Batch 69           :after a2, 12d
+        Batch 70           :after a2, 13d
+        Batch 71           :after a2, 14d
+        Batch 72           :after a2, 29d
+        Batch 73           :after a2, 30d
+        Batch 74           :after a2, 31d
+        Batch 75           :after a2, 32d
+        section FP
+        Batch 12           :a3, 2023-06-27, 1d
+        Batch 13           :after a3, 2d
+        section IKF-916
+        Batch 62           :a4, 2023-07-01, 1d
+        Batch 63           :after a4, 2d
+        Batch 64           :after a4, 3d
+        Batch 65           :after a4, 4d
+        Batch 66           :after a4, 5d
+        Batch 67           :after a4, 6d
+        Batch 68           :after a4, 7d
+        Batch 69           :after a4, 9d
+        Batch 70           :after a4, 10d
+        Batch 71           :after a4, 11d
+        Batch 72           :after a4, 12d
+        Batch 73           :after a4, 13d
+        Batch 74           :after a4, 14d
+        Batch 75           :after a4, 16d
+        Batch 76           :after a4, 17d
+        Batch 77           :after a4, 18d
+        Batch 78           :after a4, 19d
+        Batch 79           :after a4, 20
+        Batch 80           :after a4, 21d
+        Batch 81           :after a4, 22d
+        Batch 82           :after a4, 23d
+        Batch 83           :after a4, 24d
+        Batch 84           :after a4, 25d
+        Batch 85           :after a4, 26d
+        Batch 86           :after a4, 27d
+        Batch 87           :after a4, 28d
+        Batch 88           :after a4, 29d
+        Batch 89           :after a4, 30d
+        Batch 90           :after a4, 31d
+        section FPESA
+        Batch 1            :a5, 2023-07-17, 2d
+        Batch 2            :after a5, 3d
+        Batch 3            :after a5, 6d
+`;
+
+document.getElementById('ganttChart').innerHTML = ganttChart;
+mermaid.init(undefined, document.querySelectorAll('.mermaid'));
+</script>
+    
