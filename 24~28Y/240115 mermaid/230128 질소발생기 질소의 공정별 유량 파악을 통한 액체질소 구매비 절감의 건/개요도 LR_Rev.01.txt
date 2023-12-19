@@ -1,11 +1,3 @@
-sequenceDiagram
-    Alice->>Bob: Hello Bob, how are you ?
-    Bob->>Alice: Fine, thank you. And you?
-    create participant Carl
-    Alice->>Carl: Hi Carl!
-    create actor D as Donald
-    Carl->>D: Hi!
-    destroy Carl
-    Alice-xCarl: We are too many
-    destroy Bob
-    Bob->>Alice: I agree
+flowchart LR
+   Generator -- FI_S_105 (NaN m3/h) --> B -- text2 --> C
+   FCV_S_105
