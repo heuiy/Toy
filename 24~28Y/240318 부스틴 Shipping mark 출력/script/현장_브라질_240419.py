@@ -32,36 +32,35 @@ import os
 from datetime import datetime
 
 def select_pdf_file():
-  download_folder = "D:\\#.Secure Work Folder\\Shipping Mark\\pdf"
-#  download_folder = "D:\\#.Secure Work Folder\\BIG\\Toy\\24~28Y\\240318 부스틴 Shipping mark 출력\\pdf"
-  pdf_files = [f for f in os.listdir(download_folder) if f.endswith('.pdf')]
-  print("사용 가능한 PDF 파일:")
-  for idx, file in enumerate(pdf_files):
-      print(f"{idx + 1}. {file}")
-  choice = int(input("선택할 PDF 파일 번호를 입력하세요: ")) - 1
-  return os.path.join(download_folder, pdf_files[choice])
+   download_folder = "D:\\#.Secure Work Folder\\Shipping Mark\\pdf"
+   # download_folder = "D:\\#.Secure Work Folder\\BIG\\Toy\\24~28Y\\240318 부스틴 Shipping mark 출력\\pdf"
+   pdf_files = [f for f in os.listdir(download_folder) if f.endswith('.pdf')]
+   print("사용 가능한 PDF 파일:")
+   for idx, file in enumerate(pdf_files):
+       print(f"{idx + 1}. {file}")
+   choice = int(input("선택할 PDF 파일 번호를 입력하세요: ")) - 1
+   return os.path.join(download_folder, pdf_files[choice])
 
 def copy_pages(input_pdf_path, first_copies):
-  reader = PdfFileReader(input_pdf_path)
-  writer = PdfFileWriter()
-  total_pages = reader.getNumPages()
+   reader = PdfFileReader(input_pdf_path)
+   writer = PdfFileWriter()
+   total_pages = reader.getNumPages()
 
-  if total_pages not in [1, 2]:
-      print("지원하지 않는 페이지 수입니다. 1페이지 또는 2페이지의 PDF만 지원됩니다.")
-      return None
+   if total_pages not in [1, 2]:
+       print("지원하지 않는 페이지 수입니다. 1페이지 또는 2페이지의 PDF만 지원됩니다.")
+       return None
 
-  if total_pages == 2:
-      first_copies -= 1
+   if total_pages == 2:
+       first_copies -= 1
 
-  for _ in range(first_copies):
-      writer.addPage(reader.getPage(0))
-  if total_pages == 2:
-      writer.addPage(reader.getPage(1))
+   for _ in range(first_copies):
+       writer.addPage(reader.getPage(0))
+   if total_pages == 2:
+       writer.addPage(reader.getPage(1))
 
-  return writer
+   return writer
 
 def add_watermark_and_address(input_pdf_path, current_document_number, total_documents, batch_number, skip_address=False):
-   fixed_address = "Merck Sharp & Dohme Saúde Animal Ltda. Vinhedo - SP - Brazil"
    reader = PdfFileReader(input_pdf_path)
    writer = PdfFileWriter()
    total_pages = reader.getNumPages()
@@ -73,24 +72,31 @@ def add_watermark_and_address(input_pdf_path, current_document_number, total_doc
 
        # 페이지 번호 추가
        page_number_text = f"{current_document_number + i}                        {total_documents}"
-#       can.drawString(230, 44, page_number_text)
-#       can.drawString(238, 50, page_number_text)
+       # can.drawString(230, 44, page_number_text)
        can.drawString(238, 51, page_number_text)
 
        # 배치 번호 추가
        batch_number_text = f"(  {batch_number}  )"
-#       can.drawString(276, 293, batch_number_text)  # 배치 번호 위치 (250, 200)
-#       can.drawString(286, 290, batch_number_text)  # 배치 번호 위치 (250, 200)
-       can.drawString(286, 284, batch_number_text)  # 배치 번호 위치 (250, 200)
+       # can.drawString(276, 293, batch_number_text)
+       can.drawString(286, 284, batch_number_text)
 
        if not skip_address:
-           # 주소 및 배경색 추가
-           can.setFillColor(white)  # 배경색 흰색으로 설정
-#           can.rect(200, 450, 600, 30, fill=True, stroke=False)
-           can.rect(218, 409, 500, 15, fill=True, stroke=False)
-           can.setFillColor(black)  # 글자색 검정으로 설정
-#           can.drawString(205, 460, fixed_address)  # 주소 추가
-           can.drawString(218, 409, fixed_address)  # 주소 추가
+           # 배경색 및 텍스트 업데이트
+           can.setFillColor(white)
+           # can.rect(200, 484, 600, 30, fill=True, stroke=False)
+           # can.rect(200, 450, 600, 30, fill=True, stroke=False)
+           # can.rect(200, 347, 600, 30, fill=True, stroke=False)
+           can.rect(218, 443, 550, 15, fill=True, stroke=False)
+           can.rect(218, 409, 550, 15, fill=True, stroke=False)
+           can.rect(218, 306, 550, 15, fill=True, stroke=False)
+
+           can.setFillColor(black)
+           # can.drawString(205, 494, "MERCH SHARP & DOHME SAUDE ANIAML LTDA")
+           # can.drawString(205, 460, "SAO PAULO - BRAZIL RUA EDGAR MARCHIORI, 255")
+           # can.drawString(205, 357, "BOOSTIN")
+           can.drawString(218, 443, "MERCH SHARP & DOHME SAUDE ANIAML LTDA")
+           can.drawString(218, 409, "SAO PAULO - BRAZIL RUA EDGAR MARCHIORI, 255")
+           can.drawString(218, 306, "BOOSTIN")
 
        can.save()
        packet.seek(0)
@@ -125,8 +131,8 @@ def main():
            print("PDF 생성에 실패하였습니다.")
            continue
 
+       # temp_pdf_file = os.path.join("D:\\#.Secure Work Folder\\BIG\\Toy\\24~28Y\\240318 부스틴 Shipping mark 출력\\pdf\\temp", "temp.pdf")
        temp_pdf_file = os.path.join("D:\\#.Secure Work Folder\\Shipping Mark\\temp", "temp.pdf")
-#       temp_pdf_file = os.path.join("D:\\#.Secure Work Folder\\BIG\\Toy\\24~28Y\\240318 부스틴 Shipping mark 출력\\pdf\\temp", "temp.pdf")
        with open(temp_pdf_file, "wb") as temp_pdf:
            writer.write(temp_pdf)
 
@@ -134,8 +140,9 @@ def main():
        new_total_pages = writer_with_watermark_and_address.getNumPages()
 
        timestamp = datetime.now().strftime("%Y%m%d%H%M")
-#       output_pdf_file = os.path.join("D:\\#.Secure Work Folder\\BIG\\Toy\\24~28Y\\240318 부스틴 Shipping mark 출력\\out", f"{input_pdf_filename}_{timestamp}_{current_document_number}.pdf")
-       output_pdf_file = os.path.join("D:\\#.Secure Work Folder\\Shipping Mark\\out", f"{input_pdf_filename}_{timestamp}_{current_document_number}.pdf")
+       # output_pdf_file = os.path.join("D:\\#.Secure Work Folder\\BIG\\Toy\\24~28Y\\240318 부스틴 Shipping mark 출력\\out", f"{input_pdf_filename}_{timestamp}_{current_document_number}.pdf")
+       output_pdf_file = os.path.join("D:\\#.Secure Work Folder\\Shipping Mark\\out",
+                                      f"{input_pdf_filename}_{timestamp}_{current_document_number}.pdf")
        with open(output_pdf_file, "wb") as output_pdf:
            writer_with_watermark_and_address.write(output_pdf)
 
@@ -148,7 +155,7 @@ def main():
        for page_num in range(reader.getNumPages()):
            combined_writer.addPage(reader.getPage(page_num))
 
-#   combined_pdf_path = os.path.join("D:\\#.Secure Work Folder\\BIG\\Toy\\24~28Y\\240318 부스틴 Shipping mark 출력\\out", f"combined_{timestamp}.pdf")
+   # combined_pdf_path = os.path.join("D:\\#.Secure Work Folder\\BIG\\Toy\\24~28Y\\240318 부스틴 Shipping mark 출력\\out", f"combined_{timestamp}.pdf")
    combined_pdf_path = os.path.join("D:\\#.Secure Work Folder\\Shipping Mark\\out", f"combined_{timestamp}.pdf")
    with open(combined_pdf_path, "wb") as combined_pdf:
        combined_writer.write(combined_pdf)
