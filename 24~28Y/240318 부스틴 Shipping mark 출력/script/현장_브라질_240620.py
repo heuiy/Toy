@@ -1,4 +1,5 @@
-# 브라질 글자 수정!!
+# 브라질 부스틴 제품명 끝에만 수정하는 것이 아니라 
+# 통째로 제품명 다시 입력하는 것으로 수정
 
 from PyPDF4 import PdfFileReader, PdfFileWriter
 from reportlab.pdfgen import canvas
