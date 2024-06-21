@@ -1,5 +1,6 @@
-# 글자에 rotate 적용함
-# 현장에서 위치 수정하면 됨
+# 일단 글자에 rotate 적용하는 것 준비했음
+# 내 노트북에서는 rotate 적용해야 하는데
+# 부스틴 현장에서는 rotate 적용 불필요함
 
 from PyPDF4 import PdfFileReader, PdfFileWriter
 from reportlab.pdfgen import canvas
